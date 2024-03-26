@@ -1,0 +1,616 @@
+Funcion cafe( pos1 )
+	escribir " 1 ¿desea saber como es el cuidado de su cultivo en cuestiones de hidratacion? o 2 ¿desea saber como se deben plantar estos cultivos? o 3 ambas. Responda 1, 2 o 3 "
+	leer pos1
+	Si pos1 = "1" Entonces
+		escribir "se recomienda regar 1 vez por semana "
+	SiNo
+		Si pos1 = "2" Entonces
+			Escribir "Se deben tener en cuenta los siguientes pasos:"
+			Escribir " - El café se planta mejor usando semillas frescas. Remoja las semillas durante un día en agua tibia."
+			Escribir " - Planta las semillas en macetas pequeñas con tierra para macetas y colócalas en un lugar cálido y brillante."
+			Escribir " - Realiza agujeros en el suelo a una profundidad de aproximadamente 2-3 centímetros y coloca una o dos semillas de café en cada hoyo y cúbrelo con tierra suelta y rica en materia orgánica. " 
+		SiNo
+			Si pos1 = "3" Entonces
+				Escribir "Se deben tener en cuenta los siguientes pasos:"
+				Escribir " - El café se planta mejor usando semillas frescas. Remoja las semillas durante un día en agua tibia."
+				Escribir " - Planta las semillas en macetas pequeñas con tierra para macetas y colócalas en un lugar cálido y brillante."
+				Escribir " - Realiza agujeros en el suelo a una profundidad de aproximadamente 2-3 centímetros y coloca una o dos semillas de café en cada hoyo y cúbrelo con tierra suelta y rica en materia orgánica. "
+	            Escribir " - Finalmente, se recomienda regar 1 vez por semana "
+			FinSi
+		FinSi	
+	FinSi
+	practicasSostenibles(res2)
+FinFuncion
+
+Funcion aguacate( pos1 )
+	escribir " 1 ¿desea saber como es el cuidado de su cultivo en cuestiones de hidratacion? o 2 ¿desea saber como se deben plantar estos cultivos? o 3 ambas. Responda 1, 2 o 3 "
+	leer pos1
+	Si pos1 = "1" Entonces
+		escribir "se recomienda regar 1 vez por semana "
+	SiNo
+		Si pos1 = "2" Entonces
+			Escribir "Se deben tener en cuenta los siguientes pasos:"
+			Escribir " - El aguacate se planta mejor utilizando semillas de aguacate. Lávalas bien y sumérgelas en agua durante unos días para ablandar la cáscara."
+			Escribir " - Inserta tres o cuatro palillos en la semilla y colócala en un vaso de agua con la parte inferior sumergida"
+			Escribir " - Cuando la semilla desarrolle raíces y brotes, transplántala a una maceta grande con tierra bien drenada, dejando la mitad superior de la semilla expuesta."
+		SiNo
+			Si pos1 = "3" Entonces
+				Escribir "Se deben tener en cuenta los siguientes pasos:"
+				Escribir " - El aguacate se planta mejor utilizando semillas de aguacate. Lávalas bien y sumérgelas en agua durante unos días para ablandar la cáscara."
+				Escribir " - Inserta tres o cuatro palillos en la semilla y colócala en un vaso de agua con la parte inferior sumergida"
+				Escribir " - Cuando la semilla desarrolle raíces y brotes, transplántala a una maceta grande con tierra bien drenada, dejando la mitad superior de la semilla expuesta."
+		        Escribir " - Finalmente, se recomienda regar 1 vez por semana "
+			FinSi
+		FinSi	
+	FinSi
+	practicasSostenibles(res2)
+FinFuncion
+
+	Funcion platanoYbanano( pos1 )
+		escribir " 1 ¿desea saber como es el cuidado de su cultivo en cuestiones de hidratacion? o 2 ¿desea saber como se deben plantar estos cultivos? o 3 ambas. Responda 1, 2 o 3 "
+		leer pos1
+		Si pos1 = "1" Entonces
+			escribir "se recomienda regar dia de por medio "
+		SiNo
+			Si pos1 = "2" Entonces
+				Escribir "Se deben tener en cuenta los siguientes pasos:"
+				Escribir " - Los plátanos o bananos se propagan a través de los brotes llamados hijuelos."
+				Escribir " - Excava un agujero lo suficientemente grande como para acomodar las raíces del hijuelo y cúbrelas con tierra."
+				Escribir " - Planta los hijuelos en un lugar soleado y bien drenado. Mantén el suelo húmedo durante el proceso de establecimiento."
+			SiNo
+				Si pos1 = "3" Entonces
+					Escribir "Se deben tener en cuenta los siguientes pasos:"
+					Escribir " - Los plátanos o bananos se propagan a través de los brotes llamados hijuelos."
+					Escribir " - Excava un agujero lo suficientemente grande como para acomodar las raíces del hijuelo y cúbrelas con tierra."
+					Escribir " - Planta los hijuelos en un lugar soleado y bien drenado. Mantén el suelo húmedo durante el proceso de establecimiento."
+					Escribir " - Finalmente, se recomienda regar dia de por medio "
+				FinSi
+			FinSi	
+		FinSi
+		practicasSostenibles(res2)
+	Fin Funcion
+
+	Funcion flores( pos1 )
+		escribir " 1 ¿desea saber como es el cuidado de su cultivo en cuestiones de hidratacion? o 2 ¿desea saber como se deben plantar estos cultivos? o 3 ambas. Responda 1, 2 o 3 "
+		leer pos1
+		Si pos1 = "1" Entonces
+			escribir "se recomienda regar dia de por medio "
+		SiNo
+			Si pos1 = "2" Entonces
+				Escribir "Se deben tener en cuenta los siguientes pasos:"
+				Escribir " - Las flores pueden plantarse a partir de semillas, plántulas o bulbos, dependiendo del tipo de flor."
+				Escribir " - Sigue las instrucciones específicas para cada tipo de flor con respecto a la profundidad de siembra y el espaciado entre las plantas."
+				Escribir " - Mantén el suelo húmedo durante el proceso de germinación y establecimiento de las plantas."
+			SiNo
+				Si pos1 = "3" Entonces
+					Escribir "Se deben tener en cuenta los siguientes pasos:"
+					Escribir " - Las flores pueden plantarse a partir de semillas, plántulas o bulbos, dependiendo del tipo de flor."
+					Escribir " - Sigue las instrucciones específicas para cada tipo de flor con respecto a la profundidad de siembra y el espaciado entre las plantas."
+					Escribir " - Mantén el suelo húmedo durante el proceso de germinación y establecimiento de las plantas."
+					Escribir " - Finalmente, se recomienda regar dia de por medio "
+				FinSi
+			FinSi	
+		FinSi
+		practicasSostenibles(res2)
+	Fin Funcion
+
+	Funcion maiz( pos1 )
+		escribir " 1 ¿desea saber como es el cuidado de su cultivo en cuestiones de hidratacion? o 2 ¿desea saber como se deben plantar estos cultivos? o 3 ambas. Responda 1, 2 o 3 "
+		leer pos1
+		Si pos1 = "1" Entonces
+			escribir "se recomienda regar dia de por medio "
+		SiNo
+			Si pos1 = "2" Entonces
+				Escribir "Se deben tener en cuenta los siguientes pasos:"
+				Escribir " - El maíz se planta comúnmente a partir de semillas directamente en el suelo."
+				Escribir " - Siembra las semillas a una profundidad de alrededor de 2-3 centímetros y con un espaciado adecuado entre las plantas."
+				Escribir " - Mantén el suelo húmedo durante el período de germinación y establecimiento de las plántulas."
+				Escribir " - El maíz es polinizado por el viento, por lo que es recomendable plantar las semillas en bloques cortos de varias filas para mejorar la polinización."
+			SiNo
+				Si pos1 = "3" Entonces
+					Escribir "Se deben tener en cuenta los siguientes pasos:"
+					Escribir " - El maíz se planta comúnmente a partir de semillas directamente en el suelo."
+					Escribir " - Siembra las semillas a una profundidad de alrededor de 2-3 centímetros y con un espaciado adecuado entre las plantas."
+					Escribir " - Mantén el suelo húmedo durante el período de germinación y establecimiento de las plántulas."
+					Escribir " - El maíz es polinizado por el viento, por lo que es recomendable plantar las semillas en bloques cortos de varias filas para mejorar la polinización."
+					Escribir " - Finalmente, se recomienda regar dia de por medio "
+				FinSi
+			FinSi	
+		FinSi
+		practicasSostenibles(res2)
+	Fin Funcion
+
+	Funcion cacao( pos1 )
+		escribir " 1 ¿desea saber como es el cuidado de su cultivo en cuestiones de hidratacion? o 2 ¿desea saber como se deben plantar estos cultivos? o 3 ambas. Responda 1, 2 o 3 "
+		leer pos1
+		Si pos1 = "1" Entonces
+			escribir "se recomienda regar dia de por medio "
+		SiNo
+			Si pos1 = "2" Entonces
+				Escribir "Se deben tener en cuenta los siguientes pasos:"
+				Escribir " - El cacao se planta mejor a partir de semillas frescas o esquejes."
+				Escribir " - Planta las semillas o esquejes en macetas con tierra bien drenada y rica en materia orgánica."
+				Escribir " - Mantén las macetas en un lugar cálido y húmedo hasta que las plántulas hayan emergido y crecido lo suficiente para ser trasplantadas al campo."
+				Escribir " - El cacao requiere sombra parcial y suelos bien drenados para un crecimiento óptimo."
+			SiNo
+				Si pos1 = "3" Entonces
+					Escribir "Se deben tener en cuenta los siguientes pasos:"
+					Escribir " - El cacao se planta mejor a partir de semillas frescas o esquejes."
+					Escribir " - Planta las semillas o esquejes en macetas con tierra bien drenada y rica en materia orgánica."
+					Escribir " - Mantén las macetas en un lugar cálido y húmedo hasta que las plántulas hayan emergido y crecido lo suficiente para ser trasplantadas al campo."
+					Escribir " - El cacao requiere sombra parcial y suelos bien drenados para un crecimiento óptimo."
+					Escribir " - Finalmente, se recomienda regar dia de por medio "
+				FinSi
+			FinSi	
+		FinSi
+		practicasSostenibles(res2)
+	Fin Funcion
+	
+	Funcion hortalizas( pos1 )
+		escribir " 1 ¿desea saber como es el cuidado de su cultivo en cuestiones de hidratacion? o 2 ¿desea saber como se deben plantar estos cultivos? o 3 ambas. Responda 1, 2 o 3 "
+		leer pos1
+		Si pos1 = "1" Entonces
+			escribir "se recomienda regar dia de por medio "
+		SiNo
+			Si pos1 = "2" Entonces
+				Escribir "Se deben tener en cuenta los siguientes pasos:"
+				Escribir " - Las hortalizas pueden plantarse a partir de semillas o plántulas, dependiendo del tipo de cultivo."
+				Escribir " - Prepara el suelo aflojándolo y enriqueciéndolo con compost o abono orgánico."
+				Escribir " - Siembra las semillas o trasplanta las plántulas a la profundidad y espaciado recomendados para cada tipo de hortaliza."
+				Escribir " - Mantén el suelo húmedo pero no encharcado y protege las plántulas de las malas hierbas y las plagas."
+			SiNo
+				Si pos1 = "3" Entonces
+					Escribir "Se deben tener en cuenta los siguientes pasos:"
+					Escribir " - Las hortalizas pueden plantarse a partir de semillas o plántulas, dependiendo del tipo de cultivo."
+					Escribir " - Prepara el suelo aflojándolo y enriqueciéndolo con compost o abono orgánico."
+					Escribir " - Siembra las semillas o trasplanta las plántulas a la profundidad y espaciado recomendados para cada tipo de hortaliza."
+					Escribir " - Mantén el suelo húmedo pero no encharcado y protege las plántulas de las malas hierbas y las plagas."
+					Escribir " - Finalmente, se recomienda regar dia de por medio "
+				FinSi
+			FinSi	
+		FinSi
+		practicasSostenibles(res2)
+	Fin Funcion
+
+Funcion frutasTropicales( pos1 )
+	escribir " 1 ¿desea saber como es el cuidado de su cultivo en cuestiones de hidratacion? o 2 ¿desea saber como se deben plantar estos cultivos? o 3 ambas. Responda 1, 2 o 3 "
+	leer pos1
+	Si pos1 = "1" Entonces
+		escribir "se recomienda regar cada dos dias "
+	SiNo
+		Si pos1 = "2" Entonces
+			Escribir "Se deben tener en cuenta los siguientes pasos:"
+			Escribir " - Las frutas tropicales como el mango, la piña, la papaya y la guayaba pueden plantarse a partir de semillas o esquejes, según la especie."
+			Escribir " - Sigue las instrucciones específicas para cada tipo de fruta con respecto a la profundidad de siembra y el espaciado entre las plantas."
+			Escribir " - Proporciona un suelo bien drenado y rico en nutrientes para un crecimiento óptimo."
+		SiNo
+			Si pos1 = "3" Entonces
+				Escribir "Se deben tener en cuenta los siguientes pasos:"
+				Escribir " - Las frutas tropicales como el mango, la piña, la papaya y la guayaba pueden plantarse a partir de semillas o esquejes, según la especie."
+				Escribir " - Sigue las instrucciones específicas para cada tipo de fruta con respecto a la profundidad de siembra y el espaciado entre las plantas."
+				Escribir " - Proporciona un suelo bien drenado y rico en nutrientes para un crecimiento óptimo."
+				Escribir " - Finalmente, se recomienda regar cada dos dias "
+			FinSi
+		FinSi	
+	FinSi
+	practicasSostenibles(res2)
+	Fin Funcion
+	
+	Funcion citricos( pos1 )
+		escribir " 1 ¿desea saber como es el cuidado de su cultivo en cuestiones de hidratacion? o 2 ¿desea saber como se deben plantar estos cultivos? o 3 ambas. Responda 1, 2 o 3 "
+		leer pos1
+		Si pos1 = "1" Entonces
+			escribir "se recomienda regar cada dos dias "
+		SiNo
+			Si pos1 = "2" Entonces
+				Escribir "Se deben tener en cuenta los siguientes pasos:"
+				Escribir " - Los cítricos pueden plantarse a partir de semillas, esquejes o plántulas compradas."
+				Escribir " - Excava un hoyo grande y profundo para acomodar las raíces de la planta."
+				Escribir " - Planta la plántula de cítricos asegurándote de que el cuello de la planta esté al nivel del suelo."
+				Escribir " - Proporciona un riego regular para mantener el suelo húmedo pero no saturado."
+				Escribir " - Protege las plántulas de cítricos del frío y las heladas durante los primeros años de crecimiento."
+			SiNo
+				Si pos1 = "3" Entonces
+					Escribir "Se deben tener en cuenta los siguientes pasos:"
+					Escribir " - Los cítricos pueden plantarse a partir de semillas, esquejes o plántulas compradas."
+					Escribir " - Excava un hoyo grande y profundo para acomodar las raíces de la planta."
+					Escribir " - Planta la plántula de cítricos asegurándote de que el cuello de la planta esté al nivel del suelo."
+					Escribir " - Proporciona un riego regular para mantener el suelo húmedo pero no saturado."
+					Escribir " - Protege las plántulas de cítricos del frío y las heladas durante los primeros años de crecimiento."
+					Escribir " - Finalmente, se recomienda regar cada dos dias "
+				FinSi
+			FinSi	
+		FinSi
+		practicasSostenibles(res2)
+	Fin Funcion
+
+
+Funcion yuca( pos1 )
+	escribir " 1 ¿desea saber como es el cuidado de su cultivo en cuestiones de hidratacion? o 2 ¿desea saber como se deben plantar estos cultivos? o 3 ambas. Responda 1, 2 o 3 "
+	leer pos1
+	Si pos1 = "1" Entonces
+		escribir "se recomienda regar cada 10 dias "
+	SiNo
+		Si pos1 = "2" Entonces
+			Escribir "Se deben tener en cuenta los siguientes pasos:"
+			Escribir " - La yuca se planta mejor con esquejes de tallo. Corta esquejes de 20-30 centímetros de longitud de tallos maduros y saludables."
+			Escribir " - Planta los esquejes en surcos poco profundos y espaciados, enterrándolos verticalmente en el suelo."
+			Escribir " - Mantén el suelo húmedo pero no encharcado durante el proceso de enraizamiento."
+		SiNo
+			Si pos1 = "3" Entonces
+				Escribir "Se deben tener en cuenta los siguientes pasos:"
+				Escribir " - La yuca se planta mejor con esquejes de tallo. Corta esquejes de 20-30 centímetros de longitud de tallos maduros y saludables."
+				Escribir " - Planta los esquejes en surcos poco profundos y espaciados, enterrándolos verticalmente en el suelo."
+				Escribir " - Mantén el suelo húmedo pero no encharcado durante el proceso de enraizamiento."
+				Escribir " - Finalmente, se recomienda regar cada 10 dias "
+			FinSi
+		FinSi	
+	FinSi
+	practicasSostenibles(res2)
+FinFuncion
+
+
+Funcion arroz( pos1 )
+	escribir " 1 ¿desea saber como es el cuidado de su cultivo en cuestiones de hidratacion? o 2 ¿desea saber como se deben plantar estos cultivos? o 3 ambas. Responda 1, 2 o 3 "
+	leer pos1
+	Si pos1 = "1" Entonces
+		escribir "se recomienda regar diario "
+	SiNo
+		Si pos1 = "2" Entonces
+			Escribir "Se deben tener en cuenta los siguientes pasos:"
+			Escribir " - Prepara el campo de arroz nivelando el terreno y asegurándote de que haya un sistema de riego adecuado."
+			Escribir " - Remoja las semillas de arroz en agua durante al menos 24 horas antes de plantarlas."
+			Escribir " - Planta las semillas de arroz en el campo inundado a una profundidad de alrededor de 2-3 centímetros."
+			Escribir " - Mantén el campo inundado con agua durante la temporada de crecimiento del arroz, asegurándote de que el agua no se estanque y que haya un buen drenaje."
+		SiNo
+			Si pos1 = "3" Entonces
+				Escribir "Se deben tener en cuenta los siguientes pasos:"
+				Escribir " - Prepara el campo de arroz nivelando el terreno y asegurándote de que haya un sistema de riego adecuado."
+				Escribir " - Remoja las semillas de arroz en agua durante al menos 24 horas antes de plantarlas."
+				Escribir " - Planta las semillas de arroz en el campo inundado a una profundidad de alrededor de 2-3 centímetros."
+				Escribir " - Mantén el campo inundado con agua durante la temporada de crecimiento del arroz, asegurándote de que el agua no se estanque y que haya un buen drenaje."
+				Escribir " - Finalmente, se recomienda regar diario "
+			FinSi
+		FinSi	
+	FinSi
+	practicasSostenibles(res2)
+FinFuncion
+
+
+Funcion practicasSostenibles(res2)
+	escribir "¿desea saber recomendaciones para que el cultivo sea sostenible? "
+	leer res2
+	Si res2 = "si" Entonces
+		escribir "algunas practicas sostenibles que puede implementar son: Utilizacion de metodos de cultivo organico, Conservacion de suelos, Manejo eficiente del agua y Proteccion de la biodiversidad "
+		
+	SiNo
+		escribir "si tienes alguna otra duda, repite el proceso "
+	Fin Si
+Fin Funcion
+
+
+Algoritmo agriculturaSostenible
+	
+	definir sub, res, pos1 como caracter
+	escribir "¿en que subregion del departamento de Antioquia se encuentra? (Bajo Cauca(Bc), Magdalena Medio(Mm), Nordeste(Nd), Norte(N), Occidente(Oc), Oriente(Or), Suroeste(So), Urabá(U), Valle de Aburrá(Va)), escribir respuesta con su abreviatura "
+	leer sub
+	
+	Si sub = "Bc" entonces 
+		escribir "¿desea saber que puede cultivar? " 
+		leer res
+		Si res = "si" Entonces
+			escribir "si sus condiciones climaticas lo permiten, deberia de cultivar: Plátano y Banano, Yuca, Cacao, Café, Maíz, Frutas Tropicales y Arroz " 
+			escribir "que cultivo desea relizar? "
+			leer pos1
+			Si pos1 = "cafe" Entonces
+				cafe( pos1 )
+			SiNo
+				Si pos1 = "platano y banano" o pos1 = "platano" o pos1 = "banano" Entonces
+					platanoYbanano( pos1 )
+				SiNo
+					Si pos1 = "maiz" Entonces
+						maiz( pos1 )
+					SiNo
+						Si pos1 = "cacao" Entonces
+							cacao( pos1 )
+						SiNo
+							Si pos1 = "frutas tropicales" Entonces
+								frutasTropicales( pos1 )
+							SiNo
+								Si pos1 = "yuca" Entonces
+									yuca( pos1 )
+								SiNo
+									Si pos1 = "arroz" Entonces
+										arroz( pos1 )
+									Fin Si
+								Fin Si
+							Fin Si
+						Fin Si
+					Fin Si
+				Fin Si
+			Fin Si
+			
+		SiNo
+			Si res = "no" Entonces
+				practicasSostenibles(res2)
+			Fin Si
+		FinSi
+		
+	SiNo
+		Si sub = "Mm" Entonces
+			escribir "¿desea saber que puede cultivar? "
+			leer res 
+			Si res = "si" Entonces
+				escribir "si sus condiciones climaticas lo permiten, deberia de cultivar:Frutas Tropicales, Café, Cacao, Yuca, Maíz y Arroz " 
+				escribir "que cultivo desea relizar? "
+				leer pos1
+				Si pos1 = "cafe" Entonces
+					cafe( pos1 )
+				SiNo
+					Si pos1 = "maiz" Entonces
+						maiz( pos1 )
+					SiNo
+						Si pos1 = "cacao" Entonces
+							cacao( pos1 )
+						SiNo
+							Si pos1 = "frutas tropicales" Entonces
+								frutasTropicales( pos1 )
+							SiNo
+								Si pos1 = "yuca" Entonces
+									yuca( pos1 )
+								SiNo
+									Si pos1 = "arroz" Entonces
+										arroz( pos1 )
+									Fin Si
+								Fin Si
+							Fin Si
+						Fin Si
+					Fin Si
+				Fin Si
+			SiNo
+				Si res = "no" Entonces
+					practicasSostenibles(res2)
+				FinSi
+				
+			FinSi
+			
+		SiNo
+			Si sub = "No" Entonces
+				escribir "¿desea saber que puede cultivar? " 
+				leer res
+				Si res = "si" Entonces
+					escribir "si sus condiciones climaticas lo permiten, deberia de cultivar: Café, Plátano y banano, Cacao, Frutas Tropicales y Hortalizas " 
+					escribir "que cultivo desea relizar? "
+					leer pos1
+					Si pos1 = "cafe" Entonces
+						cafe( pos1 )
+					SiNo
+						Si pos1 = "platano y banano" o pos1 = "platano" o pos1 = "banano" Entonces
+							platanoYbanano( pos1 )
+						SiNo 
+							Si pos1 = "cacao" Entonces
+								cacao( pos1 )
+							SiNo
+								Si pos1 = "hortalizas" Entonces
+									hortalizas( pos1 )
+								Fin Si
+							Fin Si
+						Fin Si
+					Fin Si
+				SiNo
+					Si res = "no" Entonces 
+						practicasSostenibles(res2)
+					FinSi
+				Fin Si
+			SiNo 
+				Si sub = "N" Entonces
+					escribir "¿desea saber que puede cultivar? "
+					leer res
+					Si res = "si" Entonces
+						escribir  "si sus condiciones climaticas lo permiten, deberia de cultivar: Café, Plátano y Banano, Maíz, Aguacates y Hortalizas "
+						escribir "que cultivo desea relizar? "
+						leer pos1
+						Si pos1 = "cafe" Entonces
+							cafe( pos1 )
+						SiNo
+							Si pos1 = "aguacate" Entonces 
+								aguacate( pos1 )
+							SiNo
+								Si pos1 = "platano y banano" o pos1 = "platano" o pos1 = "banano" Entonces
+									platanoYbanano( pos1 )
+								SiNo
+									Si pos1 = "hortalizas" Entonces
+										hortalizas( pos1 )
+									SiNo
+										Si pos1 = "maiz" Entonces
+											maiz( pos1 )
+										Fin Si
+									Fin Si
+								Fin Si
+							Fin Si
+						Fin Si
+					SiNo
+						Si res = "no" Entonces
+							practicasSostenibles(res2)
+						Fin Si
+					Fin Si
+				SiNo
+					Si sub = "Oc" Entonces
+						escribir "¿desea saber que puede cultivar? "
+						leer res
+						Si res = "si" Entonces
+							escribir "si sus condiciones climaticas lo permiten, deberia de cultivar: Café, Plátano y Banano, Cacao, Frutas Tropicales, Maíz y Hortalizas "
+							escribir "que cultivo desea relizar? "
+							leer pos1
+							Si pos1 = "cafe" Entonces
+								cafe( pos1 )
+							SiNo
+								Si pos1 = "platano y banano" o pos1 = "platano" o pos1 = "banano" Entonces
+									platanoYbanano( pos1 )
+								SiNo
+									Si pos1 = "hortalizas" Entonces
+										hortalizas( pos1 )
+									SiNo
+										Si pos1 = "maiz" Entonces
+											maiz( pos1 )
+										SiNo
+											Si pos1 = "cacao" entonces 
+												cacao( pos1 )
+											SiNo
+												Si pos1 = "frutas tropicales" Entonces
+													frutasTropicales( pos1 )
+												FinSi
+											FinSi
+										Fin Si
+									Fin Si
+								Fin Si
+							Fin Si
+						SiNo
+							Si res ="no" Entonces
+								practicasSostenibles(res2)
+							Fin Si
+						Fin Si
+					SiNo
+						si sub = "Or" Entonces
+							Escribir "¿desea saber que puede cultivar?"
+							leer res
+							si res = "si" Entonces
+								Escribir  "si sus condiciones climaticas lo permiten, deberia cultivar: Café, Aguacate, Hortalizas, Frutas tropicales, Flores"
+								escribir "que cultivo desea relizar? "
+								leer pos1
+								Si pos1 = "cafe" Entonces
+									cafe( pos1 )
+								SiNo
+									Si pos1 = "hortalizas" Entonces
+										hortalizas( pos1 )
+									SiNo
+										Si pos1 = "frutas tropicales" Entonces
+											frutasTropicales( pos1 )
+										Sino 
+											Si pos1 = "aguacate" entonces	
+												aguacate( pos1 )
+											SiNo
+												Si pos1 = "flores" Entonces
+													flores( pos1 ) 
+												FinSi
+											FinSi
+										Fin Si
+									Fin Si
+								Fin Si
+							SiNo
+								si res = "no" Entonces
+									practicasSostenibles(res2)
+								FinSi
+							FinSi
+						SiNo
+							si sub = "So" Entonces
+								Escribir "¿desea saber que puede cultivar?"
+								leer res
+								si res = "si" Entonces
+									Escribir "si sus condiciones climaticas lo permiten, deberia cultivar: Café, Platano y banano, Aguacate, frutas tropicales, Cacao y Hortalizas "
+									escribir "que cultivo desea relizar? "
+									leer pos1
+									Si pos1 = "cafe" Entonces
+										cafe( pos1 )
+									SiNo
+										Si pos1 = "platano y banano" o pos1 = "platano" o pos1 = "banano" Entonces
+											platanoYbanano( pos1 )
+										SiNo
+											Si pos1 = "frutas tropicales" Entonces
+												frutasTropicales( pos1 )
+											SiNo
+												si pos1 = "aguacate" Entonces 
+													aguacate( pos1 )
+												Sino 
+													si pos1 = "hortalizas" Entonces
+														hortalizas( pos1 )
+													SiNo
+														Si pos1 = "cacao" Entonces
+															cacao( pos1 )															
+														FinSi
+													FinSi
+												FinSi
+											Fin Si
+										Fin Si
+									Fin Si
+								SiNo
+									si res = "no" Entonces
+										practicasSostenibles(res2)
+									FinSi
+								FinSi
+							SiNo
+								si sub = "U" Entonces
+									Escribir "¿desea saber que puede cultivar?"
+									leer res
+									si res = "si" Entonces
+										Escribir "si sus condiciones climaticas lo permiten, deberian cultivar: Banano y platano, Cacao, Café, Yuca, Maíz, Cítricos "
+										escribir "que cultivo desea relizar? "
+										leer pos1
+										Si pos1 = "cafe" Entonces
+											cafe( pos1 )
+										SiNo
+											Si pos1 = "platano y banano" o pos1 = "platano" o pos1 = "banano" Entonces
+												platanoYbanano( pos1 )
+											SiNo
+												Si pos1 = "maiz" Entonces
+													maiz( pos1 )
+												SiNo
+													Si pos1 = "cacao" Entonces
+														cacao( pos1 )
+													SiNo
+														Si pos1 = "citricos" Entonces
+															citricos( pos1 )
+														SiNo
+															Si pos1 = "yuca" Entonces
+																yuca( pos1 )
+															Fin Si
+														Fin Si
+													FinSi
+												FinSi
+											Fin Si
+										Fin Si
+									SiNo
+										si res = "no" Entonces
+											practicasSostenibles(res2)
+										FinSi
+									FinSi
+								SiNo
+									si sub = "Va" Entonces
+										Escribir "¿desea saber que puede cultivar?"
+										leer res
+										Si res = "si" Entonces
+											Escribir "si sus condiciones climaticas lo permiten, deberia cultivar: Café, Aguacate, frutas tropicales, Hortalizas "
+											escribir "que cultivo desea relizar? "
+											leer pos1
+											Si pos1 = "cafe" Entonces
+												cafe( pos1 )
+											SiNo
+												Si pos1 = "hortalizas" Entonces
+													hortalizas( pos1 )
+												SiNo
+													Si pos1 = "frutas tropicales" Entonces
+														frutasTropicales( pos1 )
+													SiNo
+														Si pos1 = "aguacate" Entonces
+															aguacate( pos1 )
+														FinSi
+														
+													FinSi
+													
+												FinSi
+											FinSi
+										SiNo
+											si res = "no" Entonces
+												practicasSostenibles(res2)
+											FinSi
+										FinSi
+									FinSi
+								FinSi
+							FinSi
+						FinSi
+					Fin Si
+				Fin Si
+			Fin Si
+		Fin Si
+	Fin Si
+FinAlgoritmo
