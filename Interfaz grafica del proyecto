@@ -1,0 +1,424 @@
+import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class GuiGenieInterface {
+
+    private JFrame frame;
+    private JComboBox<String> subregionComboBox;
+    private JComboBox<String> cultivoComboBox;
+    private JLabel lblSubregion;
+    private JLabel lblCultivo;
+    private JButton btnSiguiente;
+    private JPanel panelCultivo;
+    private JButton btnContinuar;
+    private JPanel panelOpciones;
+    private JLabel lblOpciones;
+    private JButton btnFinalizar;
+
+    public static void main(String[] args) {
+        EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    GuiGenieInterface window = new GuiGenieInterface();
+                    window.frame.setVisible(true);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
+
+    public GuiGenieInterface() {
+        initialize();
+    }
+
+    private void initialize() {
+        frame = new JFrame();
+        frame.setBounds(100, 100, 600, 400);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().setLayout(null);
+
+        lblSubregion = new JLabel("¿En qué subregión del departamento de Antioquia se encuentra?");
+        lblSubregion.setBounds(10, 11, 400, 14);
+        frame.getContentPane().add(lblSubregion);
+
+        subregionComboBox = new JComboBox<String>();
+        subregionComboBox.addItem("Bajo Cauca (Bc)");
+        subregionComboBox.addItem("Magdalena Medio (Mm)");
+        subregionComboBox.addItem("Nordeste (Nd)");
+        subregionComboBox.addItem("Norte (N)");
+        subregionComboBox.addItem("Occidente (Oc)");
+        subregionComboBox.addItem("Oriente (Or)");
+        subregionComboBox.addItem("Suroeste (So)");
+        subregionComboBox.addItem("Urabá (U)");
+        subregionComboBox.addItem("Valle de Aburrá (Va)");
+        subregionComboBox.setBounds(10, 36, 250, 20);
+        frame.getContentPane().add(subregionComboBox);
+
+        btnSiguiente = new JButton("Siguiente");
+        btnSiguiente.setBounds(10, 66, 120, 23);
+        frame.getContentPane().add(btnSiguiente);
+
+        panelCultivo = new JPanel();
+        panelCultivo.setBounds(10, 97, 550, 153);
+        frame.getContentPane().add(panelCultivo);
+        panelCultivo.setLayout(null);
+        panelCultivo.setVisible(false);
+
+        lblCultivo = new JLabel("¿Qué cultivo desea realizar?");
+        lblCultivo.setBounds(10, 11, 200, 14);
+        panelCultivo.add(lblCultivo);
+
+        cultivoComboBox = new JComboBox<String>();
+        cultivoComboBox.addItem("Café");
+        cultivoComboBox.addItem("Plátano y Banano");
+        cultivoComboBox.addItem("Maíz");
+        cultivoComboBox.addItem("Cacao");
+        cultivoComboBox.addItem("Frutas Tropicales");
+        cultivoComboBox.addItem("Hortalizas");
+        cultivoComboBox.addItem("Aguacate");
+        cultivoComboBox.addItem("Yuca");
+        cultivoComboBox.addItem("Arroz");
+        cultivoComboBox.setBounds(10, 36, 200, 20);
+        panelCultivo.add(cultivoComboBox);
+
+        btnSiguiente.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                panelCultivo.setVisible(true);
+                btnSiguiente.setVisible(false);
+            }
+        });
+
+        panelOpciones = new JPanel();
+        panelOpciones.setBounds(10, 97, 550, 153);
+        frame.getContentPane().add(panelOpciones);
+        panelOpciones.setLayout(null);
+
+        lblOpciones = new JLabel("Elija una opción:");
+        lblOpciones.setBounds(10, 11, 200, 14);
+        panelOpciones.add(lblOpciones);
+
+        JButton radioButton1 = new JButton("Para saber el cuidado del cultivo en cuestión de hidratación");
+        radioButton1.setBounds(10, 36, 500, 20);
+        panelOpciones.add(radioButton1);
+
+        JButton radioButton2 = new JButton("Para saber cómo se deben plantar");
+        radioButton2.setBounds(10, 61, 500, 20);
+        panelOpciones.add(radioButton2);
+
+        JButton radioButton3 = new JButton("Ambas");
+        radioButton3.setBounds(10, 86, 500, 20);
+        panelOpciones.add(radioButton3);
+
+        btnContinuar = new JButton("Continuar");
+        btnContinuar.setBounds(10, 117, 120, 23);
+        panelOpciones.add(btnContinuar);
+
+        btnContinuar.setVisible(true);
+
+        panelOpciones.setVisible(true);
+
+        btnContinuar.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                panelOpciones.setVisible(false);
+                btnFinalizar.setVisible(true);
+            }
+        });
+
+        panelCultivo.setVisible(false);
+
+        btnContinuar.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                panelOpciones.setVisible(true);
+                btnFinalizar.setVisible(true);
+            }
+        });
+
+        btnFinalizar = new JButton("Finalizar");
+        btnFinalizar.setBounds(10, 250, 120, 23);
+        frame.getContentPane().add(btnFinalizar);
+        btnFinalizar.setVisible(true);
+
+        panelCultivo.setVisible(true);
+
+        cultivoComboBox.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                String sub = (String) subregionComboBox.getSelectedItem();
+                String cultivo = (String) cultivoComboBox.getSelectedItem();
+                switch (sub.toLowerCase()) {
+                    case "bc":
+                        switch (cultivo.toLowerCase()) {
+                            case "café":
+                                cafe();
+                                break;
+                            case "plátano y banano":
+                            case "plátano":
+                            case "banano":
+                                platanoYbanano();
+                                break;
+                            case "maíz":
+                                maiz();
+                                break;
+                            case "cacao":
+                                cacao();
+                                break;
+                            case "frutas tropicales":
+                                frutasTropicales();
+                                break;
+                            case "hortalizas":
+                                hortalizas();
+                                break;
+                            case "aguacate":
+                                aguacate();
+                                break;
+                            case "yuca":
+                                yuca();
+                                break;
+                            case "arroz":
+                                arroz();
+                                break;
+                        }
+                        break;
+                    case "mm":
+                        switch (cultivo.toLowerCase()) {
+                            case "café":
+                                cafe();
+                                break;
+                            case "maíz":
+                                maiz();
+                                break;
+                            case "cacao":
+                                cacao();
+                                break;
+                            case "frutas tropicales":
+                                frutasTropicales();
+                                break;
+                            case "yuca":
+                                yuca();
+                                break;
+                            case "arroz":
+                                arroz();
+                                break;
+                        }
+                        break;
+                    case "no":
+                        switch (cultivo.toLowerCase()) {
+                            case "café":
+                                cafe();
+                                break;
+                            case "plátano y banano":
+                            case "plátano":
+                            case "banano":
+                                platanoYbanano();
+                                break;
+                            case "cacao":
+                                cacao();
+                                break;
+                            case "hortalizas":
+                                hortalizas();
+                                break;
+                        }
+                        break;
+                    case "n":
+                        switch (cultivo.toLowerCase()) {
+                            case "café":
+                                cafe();
+                                break;
+                            case "aguacate":
+                                aguacate();
+                                break;
+                            case "plátano y banano":
+                            case "plátano":
+                            case "banano":
+                                platanoYbanano();
+                                break;
+                            case "hortalizas":
+                                hortalizas();
+                                break;
+                            case "maíz":
+                                maiz();
+                                break;
+                        }
+                        break;
+                    case "oc":
+                        switch (cultivo.toLowerCase()) {
+                            case "café":
+                                cafe();
+                                break;
+                            case "aguacate":
+                                aguacate();
+                                break;
+                            case "maíz":
+                                maiz();
+                                break;
+                            case "cacao":
+                                cacao();
+                                break;
+                        }
+                        break;
+                    case "or":
+                        switch (cultivo.toLowerCase()) {
+                            case "café":
+                                cafe();
+                                break;
+                            case "maíz":
+                                maiz();
+                                break;
+                            case "cacao":
+                                cacao();
+                                break;
+                            case "aguacate":
+                                aguacate();
+                                break;
+                            case "yuca":
+                                yuca();
+                                break;
+                            case "arroz":
+                                arroz();
+                                break;
+                        }
+                        break;
+                    case "so":
+                        switch (cultivo.toLowerCase()) {
+                            case "café":
+                                cafe();
+                                break;
+                            case "cacao":
+                                cacao();
+                                break;
+                            case "aguacate":
+                                aguacate();
+                                break;
+                            case "maíz":
+                                maiz();
+                                break;
+                            case "yuca":
+                                yuca();
+                                break;
+                            case "hortalizas":
+                                hortalizas();
+                                break;
+                        }
+                        break;
+                    case "u":
+                        switch (cultivo.toLowerCase()) {
+                            case "café":
+                                cafe();
+                                break;
+                            case "cacao":
+                                cacao();
+                                break;
+                            case "maíz":
+                                maiz();
+                                break;
+                            case "frutas tropicales":
+                                frutasTropicales();
+                                break;
+                            case "aguacate":
+                                aguacate();
+                                break;
+                        }
+                        break;
+                    case "va":
+                        switch (cultivo.toLowerCase()) {
+                            case "café":
+                                cafe();
+                                break;
+                            case "maíz":
+                                maiz();
+                                break;
+                            case "cacao":
+                                cacao();
+                                break;
+                            case "aguacate":
+                                aguacate();
+                                break;
+                            case "arroz":
+                                arroz();
+                                break;
+                        }
+                        break;
+                }
+            }
+        });
+
+        radioButton1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                showMessage("Para saber el cuidado del cultivo en cuestión de hidratación.");
+                btnContinuar.setVisible(true);
+                panelOpciones.setVisible(false);
+            }
+        });
+
+        radioButton2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                showMessage("Para saber cómo se deben plantar.");
+                btnContinuar.setVisible(true);
+                panelOpciones.setVisible(false);
+            }
+        });
+
+        radioButton3.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                showMessage("Ambas.");
+                btnContinuar.setVisible(true);
+                panelOpciones.setVisible(false);
+            }
+        });
+
+        btnFinalizar.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                showMessage("Aplicando prácticas sostenibles...\n¡Proyecto completado!");
+                System.exit(0);
+            }
+        });
+    }
+
+    // Métodos para cada cultivo
+    private void cafe() {
+        System.out.println("El café es el cultivo principal de esta región.");
+    }
+
+    private void platanoYbanano() {
+        System.out.println("El plátano y el banano son cultivos importantes de esta región.");
+    }
+
+    private void maiz() {
+        System.out.println("El maíz es uno de los cultivos principales de esta región.");
+    }
+
+    private void cacao() {
+        System.out.println("El cacao es uno de los cultivos principales de esta región.");
+    }
+
+    private void frutasTropicales() {
+        System.out.println("Las frutas tropicales son uno de los cultivos principales de esta región.");
+    }
+
+    private void hortalizas() {
+        System.out.println("Las hortalizas son uno de los cultivos principales de esta región.");
+    }
+
+    private void aguacate() {
+        System.out.println("El aguacate es uno de los cultivos principales de esta región.");
+    }
+
+    private void yuca() {
+        System.out.println("La yuca es uno de los cultivos principales de esta región.");
+    }
+
+    private void arroz() {
+        System.out.println("El arroz es uno de los cultivos principales de esta región.");
+    }
+
+    private void showMessage(String message) {
+        System.out.println(message);
+    }
+}
