@@ -1,0 +1,58 @@
+import java.awt.Dimension;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JSlider;
+import javax.swing.JTextArea;   
+
+public class Comentarios extends JPanel {
+    private JButton btn_enviar;
+    private JLabel lbl_comentario;
+    private JTextArea box_comentarios;
+    private JSlider jcomp4;
+    private JLabel jcomp5;
+
+    public Comentarios() {
+        // Construct components
+        btn_enviar = new JButton("Enviar");
+        lbl_comentario = new JLabel("¡Si te sirvió nuestra asesoría, háznoslo saber en nuestra caja de comentarios!");
+        box_comentarios = new JTextArea(10, 10);
+        jcomp4 = new JSlider(0, 10);
+        jcomp5 = new JLabel("¡Califica nuestro programa!");
+
+        // Set components properties
+        jcomp4.setOrientation(JSlider.HORIZONTAL);
+        jcomp4.setMinorTickSpacing(1);
+        jcomp4.setMajorTickSpacing(5);
+        jcomp4.setPaintTicks(true);
+        jcomp4.setPaintLabels(true);
+
+        // Adjust size and set layout
+        setPreferredSize(new Dimension(504, 419));
+        setLayout(null);
+
+        // Add components
+        add(btn_enviar);
+        add(lbl_comentario);
+        add(box_comentarios);
+        add(jcomp4);
+        add(jcomp5);
+
+        // Set component bounds (only needed by Absolute Positioning)
+        btn_enviar.setBounds(180, 265, 140, 20);
+        lbl_comentario.setBounds(32, 15, 450, 25);
+        box_comentarios.setBounds(32, 59, 425, 190);
+        jcomp4.setBounds(140, 345, 220, 50);
+        jcomp5.setBounds(170, 310, 165, 30);
+    }
+
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("MyPanel");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().add(new Comentarios());
+        frame.pack();
+        frame.setVisible(true);
+    }
+}
