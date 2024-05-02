@@ -1,0 +1,72 @@
+import java.awt.Dimension;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class Registro extends JPanel {
+    private JButton btn_Registrarme;
+    private JTextField txt_Nombre;
+    private JTextField txt_Apellido;
+    private JTextField txt_Identificacion;
+    private JTextField txt_Telefono;
+    private JLabel label_Nombre;
+    private JLabel label_Apellido;
+    private JLabel label_Identificacion;
+    private JLabel label_Telefono;
+
+    public Registro() {
+        // Construir componentes que van a aparecer en la interfaz grafica
+        btn_Registrarme = new JButton("Registrarme");
+        txt_Nombre = new JTextField(10);
+        txt_Apellido = new JTextField(10);
+        txt_Identificacion = new JTextField(10);
+        txt_Telefono = new JTextField(10);
+        label_Nombre = new JLabel("Nombre:");
+        label_Apellido = new JLabel("Apellido:");
+        label_Identificacion = new JLabel("Contraseña:");
+        label_Telefono = new JLabel("Teléfono:");
+
+        // Establecer propiedades de los componentes o en otras palaras cuando el usuario ponga el cursor encima de la etiqueta mostrara que debe hacer
+        label_Nombre.setToolTipText("Ingrese su nombre");
+        label_Apellido.setToolTipText("Ingrese su apellido");
+        label_Identificacion.setToolTipText("Ingrese su Contraseña");
+        label_Telefono.setToolTipText("Ingrese su número de teléfono");
+
+        // Ajustar tamaño y establecer diseño de la interfaz
+        setPreferredSize(new Dimension(300, 200));
+        setLayout(null);
+
+        // Agregar componentes al panel o interfaz graafica
+        add(btn_Registrarme);
+        add(txt_Nombre);
+        add(txt_Apellido);
+        add(txt_Identificacion);
+        add(txt_Telefono);
+        add(label_Nombre);
+        add(label_Apellido);
+        add(label_Identificacion);
+        add(label_Telefono);
+
+        // Establecer límites de los componentes (sólo necesario para Posicionamiento Absoluto) coordenadas
+        btn_Registrarme.setBounds(100, 150, 120, 20);
+        txt_Nombre.setBounds(100, 20, 150, 25);
+        txt_Apellido.setBounds(100, 50, 150, 25);
+        txt_Identificacion.setBounds(100, 80, 150, 25);
+        txt_Telefono.setBounds(100, 110, 150, 25);
+        label_Nombre.setBounds(30, 20, 100, 25);
+        label_Apellido.setBounds(30, 50, 100, 25);
+        label_Identificacion.setBounds(20, 80, 100, 25);
+        label_Telefono.setBounds(30, 110, 100, 25);
+    }
+    // 
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Registro");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().add(new Registro());
+        frame.pack();
+        frame.setVisible(true);
+    }
+}
