@@ -1,0 +1,54 @@
+import java.awt.Dimension;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class InicioSesión extends JPanel {
+    private JButton btn_IniciarSesion;
+    private JLabel label_Usuario;
+    private JLabel label_Contraseña;
+    private JTextField txt_Usuario;
+    private JTextField txt_Contraseña;
+
+    public InicioSesión() {
+        // Construir componentes
+        btn_IniciarSesion = new JButton("Iniciar Sesión");
+        label_Usuario = new JLabel("Usuario:");
+        label_Contraseña = new JLabel("Contraseña:");
+        txt_Usuario = new JTextField(10);
+        txt_Contraseña = new JTextField(10);
+
+        // Establecer propiedades de los componentes
+        label_Usuario.setToolTipText("Ingrese el nombre del usuario para iniciar sesión");
+        label_Contraseña.setToolTipText("Ingrese la contraseña del nombre de usuario registrado");
+
+        // Ajustar tamaño y establecer diseño
+        setPreferredSize(new Dimension(300, 150));
+        setLayout(null);
+
+        // Agregar componentes al panel
+        add(btn_IniciarSesion);
+        add(label_Usuario);
+        add(label_Contraseña);
+        add(txt_Usuario);
+        add(txt_Contraseña);
+
+        // Establecer límites de los componentes (sólo necesario para Posicionamiento Absoluto)
+        btn_IniciarSesion.setBounds(100, 110, 120, 20);
+        label_Usuario.setBounds(10, 10, 60, 25);
+        label_Contraseña.setBounds(10, 40, 80, 25);
+        txt_Usuario.setBounds(100, 10, 150, 25);
+        txt_Contraseña.setBounds(100, 40, 150, 25);
+    }
+
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("InicioSesion");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().add(new InicioSesión());
+        frame.pack();
+        frame.setVisible(true);
+    }
+}
